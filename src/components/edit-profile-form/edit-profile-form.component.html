@@ -1,0 +1,46 @@
+<ion-card>
+  <ion-card-content>
+    <!-- First Name -->
+    <ion-item>
+      <ion-label floating>First Name</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.firstName"></ion-input>
+    </ion-item>
+    <!-- Last Name -->
+    <ion-item>
+      <ion-label floating>Last Name</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.lastName"></ion-input>
+    </ion-item>
+    <!-- Date of Birth -->
+    <ion-item>
+      <ion-label floating>Date of Birth</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="profile.dateOfBirth"></ion-datetime>
+    </ion-item>
+    <!-- School Name -->
+    <ion-item>
+      <ion-label floating>School Name</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.schoolName"></ion-input>
+    </ion-item>
+    <!-- Current Grade -->
+    <ion-item>
+      <ion-label floating>Current Grade</ion-label>
+      <ion-input type="number" [(ngModel)]="profile.currentGrade"></ion-input>
+    </ion-item>
+    <!-- Mentees Name -->
+    <ion-item>
+      <ion-label floating>Mentees Full Name</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.mName"></ion-input>
+    </ion-item>
+    <!-- Mentees School -->
+    <ion-item>
+      <ion-label floating>Mentees School Name</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.mSchoolName"></ion-input>
+    </ion-item>
+    <!-- Mentees Current Grade -->
+    <ion-item>
+      <ion-label floating>Mentees Current Grade</ion-label>
+      <ion-input type="number" [(ngModel)]="mCurrentGrade"></ion-input>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+
+<button ion-button (click)="saveProfile()">Save</button>
